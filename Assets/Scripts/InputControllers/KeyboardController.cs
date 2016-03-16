@@ -30,6 +30,10 @@ public class KeyboardController : PlayerController {
 		if(Input.GetKeyDown(KeyCode.F)) {
 			listener.OnMeeleAttack();
 		}
+
+		if(Input.GetKeyDown(KeyCode.G)) {
+			listener.OnDropWeapon();
+		}
 	}
 
 	void UpdateMovement() {

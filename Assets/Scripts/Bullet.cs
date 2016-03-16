@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("Bullet hit something");
+		Debug.Log("Bullet hit something: " + other.name + ", layer = " + other.gameObject.layer);
 		Unit unit = other.GetComponent<Unit>();
 		if(unit) {
 			unit.GetDamage(dmg);

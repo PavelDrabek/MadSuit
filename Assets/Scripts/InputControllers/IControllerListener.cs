@@ -11,4 +11,5 @@ public interface IControllerListener {
 	void OnReload();
 
 	void OnMeeleAttack();
+	void OnDropWeapon();
 }
