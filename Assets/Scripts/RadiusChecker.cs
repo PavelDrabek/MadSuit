@@ -30,12 +30,12 @@ public class RadiusChecker : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("RadiusChecker registered " + other.name);
+//		Debug.Log("RadiusChecker registered " + other.name);
 		targets.Add(other.transform);
 	}
 
 	void OnTriggerExit(Collider other) {
-		Debug.Log("RadiusChecker lost " + other.name);
+//		Debug.Log("RadiusChecker lost " + other.name);
 		targets.Remove(other.transform);
 	}
 

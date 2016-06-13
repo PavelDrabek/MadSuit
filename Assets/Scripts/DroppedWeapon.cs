@@ -33,4 +33,5 @@ public class DroppedWeapon : MonoBehaviour {
 
 		return dropped;
 	}
+
 }
